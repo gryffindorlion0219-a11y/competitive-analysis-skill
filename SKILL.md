@@ -228,10 +228,10 @@ function getChangeColor(val) {
 ```bash
 # 启动 HTTP server
 cd /path/to/output/dir
-python3 -m http.server 7788 --bind 0.0.0.0 &>/dev/null &
+python3 -m http.server 7788
 
-# 访问（替换为你的内网 IP）
-echo "http://$(hostname -I | awk '{print $1}'):7788/output.html"
+# 访问地址
+echo "http://localhost:7788/output.html"
 ```
 
 ---
